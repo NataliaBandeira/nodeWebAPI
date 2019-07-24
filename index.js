@@ -1,16 +1,24 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
-var app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const server = express();
 
-mongoose.connect('')
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+// mongoose.connect('')
+// server.use(bodyParser.json());
+// server.use(bodyParser.urlencoded({
+//     extended: true
+// }));
+// 
+// var cats = require('./cats.js')(app)
 
-var cats = require('./cats.js')(app)
-
-var server = app.listen(3000, function() {
-    console.log('Server running at htp://127.0.0.1:3000/');
+server.get('/', (req, res) => {
+    res.send('Hello Express');
 });
+
+server.get('/about', (req, res) => {
+    res.send('bout page');
+});
+
+server.listen(3000, function () {
+    console.log('Server running at http://127.0.0.1:3000/');
+}); 
