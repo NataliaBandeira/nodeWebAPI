@@ -1,0 +1,6 @@
+{
+    "name": "Node Training - Development",
+    "mail": {
+        "host": "dev-mail-server"
+    }
+}
