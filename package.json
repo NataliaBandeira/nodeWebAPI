@@ -1,5 +1,5 @@
 {
-  "name": "Natalia",
+  "name": "node-eg",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,13 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Natalia Paula",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "1.19.0",
     "express": "4.17.1",
+    "joi": "13.1.0",
     "lodash": "4.17.14",
     "mongoose": "5.6.4",
-    "nodemon": "1.19.1"
+    "nodemon": "1.19.1",
+    "underscore": "1.9.1"
   }
 }
