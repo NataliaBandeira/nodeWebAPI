@@ -1,2 +1,3 @@
 # nodeWebAPI
-node web api test 
+
+Project with a REST API using NodeJS
